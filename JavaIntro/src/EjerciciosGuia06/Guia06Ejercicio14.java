@@ -16,20 +16,27 @@ El cambio de divisas es:
 
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
-        int cant = 0, i=0, j=0;
+        double valor=0.0, convertido=0.0;
+        String divisa="";
 
-        System.out.println("Ingrese el valor de N: ");
-        cant = leer.nextInt();
+        System.out.println("Ingrese el valor de Euros a convertir ");
+        valor = leer.nextDouble();
+        System.out.println("Ingrese la moneda a la que quiere convertir (libras / pesos / yenes):");
+        divisa = leer.next();
+        convertir(valor, divisa);
+    }
 
-        for(i=1 ; i <=cant ; i++){
-            for(j=1 ; j <=cant ; j++){
-                if (i==1 || i==cant || j==1 || j==cant){
-                    System.out.print("*");
-                }else{
-                    System.out.print(" ");
-                }
-            }
-            System.out.println("");
+    private static void convertir(double valor, String divisa) {
+        System.out.println("El cambio de divisas es: ");
+        if (divisa.equalsIgnoreCase("libras")){
+            System.out.println(valor * 0.86);
+        }else if (divisa.equalsIgnoreCase("pesos")){
+            System.out.println(valor * 1.28611);
+        }else if (divisa.equalsIgnoreCase("yenes")){
+            System.out.println(valor * 129.852);
+        }else {
+            System.out.println("La divisa ingresada es incorrecta");
         }
     }
+
 }
