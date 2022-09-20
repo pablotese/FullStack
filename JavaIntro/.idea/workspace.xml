@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="704d0bcc-c0fc-45fe-ad09-7e7fac4a1b64" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EjerciciosGuia06/Guia06Ejercicio15.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EjerciciosGuia06/Guia06Ejercicio16.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EjerciciosGuia06/Guia06Ejercicio17.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EjerciciosGuia06/Guia06Ejercicio18.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EjerciciosGuia06/Guia06Ejercicio20.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EjerciciosGuia06/Guia06Ejercicio21.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EjerciciosGuia06/Guia06Ejercicio14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EjerciciosGuia06/Guia06Ejercicio14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EjerciciosGuia06/Guia06Ejercicio19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EjerciciosGuia06/Guia06Ejercicio19.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +16,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2EfbwjsSDpYa4KIABhVXdAjzCVj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -37,46 +37,7 @@
       <recent name="C:\FullStack\JavaIntro\src\EjerciciosGuia06" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Guia06Ejercicio18">
-    <configuration name="Guia06Ejercicio14" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="EjerciciosGuia06.Guia06Ejercicio14" />
-      <module name="JavaIntro" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="EjerciciosGuia06.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Guia06Ejercicio15" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="EjerciciosGuia06.Guia06Ejercicio15" />
-      <module name="JavaIntro" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="EjerciciosGuia06.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Guia06Ejercicio16" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="EjerciciosGuia06.Guia06Ejercicio16" />
-      <module name="JavaIntro" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="EjerciciosGuia06.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Guia06Ejercicio21">
     <configuration name="Guia06Ejercicio17" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EjerciciosGuia06.Guia06Ejercicio17" />
       <module name="JavaIntro" />
@@ -103,13 +64,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Guia06Ejercicio19" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EjerciciosGuia06.Guia06Ejercicio19" />
+      <module name="JavaIntro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="EjerciciosGuia06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Guia06Ejercicio20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EjerciciosGuia06.Guia06Ejercicio20" />
+      <module name="JavaIntro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="EjerciciosGuia06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Guia06Ejercicio21" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EjerciciosGuia06.Guia06Ejercicio21" />
+      <module name="JavaIntro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="EjerciciosGuia06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Guia06Ejercicio21" />
+        <item itemvalue="Application.Guia06Ejercicio20" />
+        <item itemvalue="Application.Guia06Ejercicio19" />
         <item itemvalue="Application.Guia06Ejercicio18" />
         <item itemvalue="Application.Guia06Ejercicio17" />
-        <item itemvalue="Application.Guia06Ejercicio16" />
-        <item itemvalue="Application.Guia06Ejercicio15" />
-        <item itemvalue="Application.Guia06Ejercicio14" />
       </list>
     </recent_temporary>
   </component>
@@ -127,21 +127,21 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1663199064514">
+    <state width="1323" height="180" key="GridCell.Tab.0.bottom" timestamp="1663630625155">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1663199064514" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1663199064514">
+    <state width="1323" height="180" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1663630625155" />
+    <state width="1323" height="180" key="GridCell.Tab.0.center" timestamp="1663630625154">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1663199064514" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1663199064514">
+    <state width="1323" height="180" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1663630625154" />
+    <state width="1323" height="180" key="GridCell.Tab.0.left" timestamp="1663630625154">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1663199064514" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1663199064514">
+    <state width="1323" height="180" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1663630625154" />
+    <state width="1323" height="180" key="GridCell.Tab.0.right" timestamp="1663630625154">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1663199064514" />
+    <state width="1323" height="180" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1663630625154" />
   </component>
 </project>
