@@ -13,6 +13,7 @@ la función equals() en Java. */
 
         System.out.println("Ingrese una frase: ");
         frase = leer.nextLine();
+
         System.out.println("LA PRIMERA LETRA ES: " + frase.substring(1,2));
         if (frase.equalsIgnoreCase("eureka")){
             System.out.println("CORRECTO");

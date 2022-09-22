@@ -10,68 +10,21 @@ negativos no deben sumarse. Nota: recordar el uso de la sentencia break. */
 
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
-        int N = 0, min=0, max=0, cant=0, num=0;
-        float promedio=0;
-        Boolean primVez = true;
+        int num=-1, cant=0, pares=0, impares=0;
 
-        System.out.println("ingrese la cantidad de numeros:");
-        N = leer.nextInt();
-
-        conWhile(N);
-        conDoWhile(N);
-
-    }
-
-    private static void conDoWhile(int N) {
-        Scanner leer = new Scanner(System.in);
-        int min=0, max=0, cant=0, num=0, sum=0;
-        cant = 0;
-        Boolean primVez = true;
-        do {
-            cant++;
+        while(num % 5 != 0){
             System.out.println("ingrese un numero:");
             num = leer.nextInt();
-            sum = sum + num;
-            if(primVez== true ){
-                min= num;
-                max = num;
-                primVez = false;
-            }
-            if(num < min){
-                min = num;
-            }
-            if(max < num){
-                max = num;
-            }
-        } while(cant<(N));
-        System.out.println("Minimo: " + min + "Maximo: " + max);
-        System.out.println("Promedio: " + sum/N);
-    }
-
-    private static void conWhile(int N) {
-        Scanner leer = new Scanner(System.in);
-        int min=0, max=0, cant=0, num=0, sum=0;
-        cant = 0;
-        Boolean primVez = true;
-
-        while(cant<N){
-            cant++;
-            System.out.println("ingrese un numero:");
-            num = leer.nextInt();
-            sum = sum + num;
-            if(primVez== true ){
-                min= num;
-                max = num;
-                primVez = false;
-            }
-            if(num < min){
-                min = num;
-            }
-            if(max < num){
-                max = num;
+            if(num>0){
+                cant++;
+                if(num%2 == 0){
+                    pares ++;
+                }else {
+                    impares++;
+                }
             }
         }
-        System.out.println("Minimo: " + min + "Maximo: " + max);
-        System.out.println("Promedio: " + sum/N);
+        System.out.println("Cantidad de nros:" + cant + " Impares:" + impares + " Pares:" + pares);
     }
+
 }

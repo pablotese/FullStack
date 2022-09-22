@@ -3,11 +3,17 @@ package EjerciciosGuia06;
 import java.util.Scanner;
 
 public class Guia06Ejercicio20 {
-    /* Un cuadrado mágico 3 x 3 es una matriz 3 x 3 formada por números del 1 al 9 donde la
-suma de sus filas, sus columnas y sus diagonales son idénticas. Crear un programa que
-permita introducir un cuadrado por teclado y determine si este cuadrado es mágico o no.
-El programa deberá comprobar que los números introducidos son correctos, es decir,
-están entre el 1 y el 9.
+    /* Simular la división usando solamente restas. Dados dos números enteros mayores que
+uno, realizar un algoritmo que calcule el cociente y el residuo usando sólo restas. Método:
+Restar el dividendo del divisor hasta obtener un resultado menor que el divisor, este
+resultado es el residuo, y el número de restas realizadas es el cociente.
+Por ejemplo: 50 / 13:
+50 – 13 = 37 una resta realizada
+37 – 13 = 24 dos restas realizadas
+24 – 13 = 11 tres restas realizadas
+dado que 11 es menor que 13, entonces: el residuo es 11 y el cociente es 3.
+¿Aún no lo entendiste? Recomendamos googlear división con restas sucesivas.
+
 */
 
     public static void main(String[] args) {
