@@ -2,6 +2,12 @@ package POO;
 
 import Clase.*;
 
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+
 public class Main {
 
     public static void main(String [] args) {
@@ -29,7 +35,7 @@ public class Main {
         cafeteraService.agregarCafe(cafetera);
         System.out.println("Se lleno la taza?" + cafeteraService.servirTaza(11, cafetera));
         cafeteraService.llenarCafetera(cafetera);
-        */
+
 
         PersonaService persServ = new PersonaService();
         float pesoIdeal=0, pesoDebajo=0, pesoMayor=0;
@@ -85,7 +91,7 @@ public class Main {
         System.out.println("PORCENTAJE PESO IDEAL   : " + porcPesoIdeal + "%");
         System.out.println("PORCENTAJE PESO MAYOR   : " + porcPesoMayor + "%");
 
-        //*****************//
+        //*****************
 
         if (persServ.esMayorDeEdad(pers1)){
             mayorEdad++;
@@ -104,6 +110,93 @@ public class Main {
         porcentajeMenores = ((menorEdad * 100) / 4);
         System.out.println("PORCENTAJE MAYORES DE EDAD: " + porcentajeMayores + "%");
         System.out.println("PORCENTAJE MENORES DE EDAD: " + porcentajeMenores + "%");
+
+
+        Cadena cad = new Cadena();
+        Scanner leer =  new Scanner(System.in).useDelimiter("\n");
+        System.out.println("ingrese una frase o palabra");
+        cad.setFrase(leer.next());
+        cad.setLongitud();
+        System.out.println("Cant de vocales:" + cad.mostrarVocales());
+        cad.invertirFrase();
+        cad.vecesRepetido("a");
+        System.out.println("La longitud de la frase es igual?: " + cad.compararLongitud("habia una vez un circo"));
+        CadenaService cadServ = new CadenaService();
+        cadServ.unirFrases("Hola como estás? ", cad);
+        cad.reemplazar("h");
+        System.out.println("Contiene la letra? " + cad.contiene("s"));
+
+
+        Matematica mat = new Matematica();
+        double num1 = Math.random()*10;
+        double num2 = Math.random()*10;
+        mat.setNum1(num1);
+        mat.setNum2(num2);
+        System.out.println("El numero mayor es: " + mat.devolverMayor());
+        System.out.println("La potencia de los nums es: " + mat.calcularPotencia());
+        System.out.println("la raiz cuadrada del menor es: " + mat.calculaRaiz());
+
+        // ARRAYS - 10
+        double[] A = new double[50];
+        double[] B = new double[20];
+
+        for(int i=0 ; i <50 ; i++){
+            A[i] = (Math.random()*(75-25+1)+25);
+        }
+        for(double nro : A){
+            System.out.println(nro);
+        }
+        System.out.println("ORDENADOS: ");
+        Arrays.sort(A);
+        for(double nro : A){
+            System.out.println(nro);
+        }
+        for(int i=0 ; i <10 ; i++){
+            B[i] = A[i];
+        }
+        for(int i=10 ; i <20 ; i++){
+            B[i] = 0.5;
+        }
+        System.out.println("MUESTRO B: ");
+        for(double nro : B){
+            System.out.println(nro);
+        }
+
+        // DATE - 11
+        int diaI = 0, mesI=0 , anioI=0;
+        int diaA =0, mesA=0, anioA=0;
+        int diferencia = 0;
+        Scanner leer = new Scanner(System.in);
+        System.out.println("ingrese dia: ");
+        diaI = leer.nextInt();
+        System.out.println("ingrese mes: ");
+        mesI = leer.nextInt();
+        System.out.println("ingrese año: ");
+        anioI = leer.nextInt();
+        Date fechaIngresada = new Date(anioI, mesI, diaI);
+        Date fechaActual = new Date();
+
+        diaA = fechaActual.getDay() ;
+        mesA = fechaActual.getMonth();
+        anioA = fechaActual.getYear();
+        System.out.println("año: " + fechaActual.getYear());
+
+        if(fechaIngresada.after(fechaActual)){
+            diferencia = anioI - (fechaActual.getYear()+1900);
+        } else {
+            diferencia = (fechaActual.getYear()+1900) - anioI;
+        }
+        System.out.println("COMPARACION DE FECHAS: " + diferencia + " años");
+        */
+
+        // PERSONA 12
+        Persona12Service ps = new Persona12Service();
+        Persona12 per = ps.crearPersona();
+        System.out.println(per.getFechaNac());
+        System.out.println(per.getNombre());
+        System.out.println("la edad es: " + ps.calcularEdad(per));
+        System.out.println("ES menor que: "+ ps.menorQue(per, 37));
+        ps.mostrarPersona(per);
 
     }
 }
