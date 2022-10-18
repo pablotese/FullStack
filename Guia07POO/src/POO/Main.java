@@ -187,7 +187,7 @@ public class Main {
             diferencia = (fechaActual.getYear()+1900) - anioI;
         }
         System.out.println("COMPARACION DE FECHAS: " + diferencia + " años");
-        */
+
 
         // PERSONA 12
         Persona12Service ps = new Persona12Service();
@@ -198,5 +198,40 @@ public class Main {
         System.out.println("ES menor que: "+ ps.menorQue(per, 37));
         ps.mostrarPersona(per);
 
+        PuntosService ps = new PuntosService();
+        Puntos punt = ps.crearPuntos();
+        System.out.println("Distancia entre puntos: " + ps.calcularDistancia(punt));
+
+        NIFService ns = new NIFService();
+        NIF nifi = ns.crearNIF();
+        ns.mostrar(nifi);
+
+        MesesService ms = new MesesService();
+        Boolean adivino = false;
+        Scanner userInput = new Scanner(System.in).useDelimiter("\n");
+        Boolean primVez = true;
+        System.out.println("Adivine el mes secreto. Introduzca el nombre del mes en minúsculas: ");
+        String m = userInput.next();
+        do {
+            adivino = ms.adivinaMes(m);
+            if(primVez && !adivino){
+                primVez = false;
+            }else if(!primVez && !adivino){
+                System.out.println("No ha acertado. Intente adivinarlo introduciendo otro mes:");
+                m = userInput.next();
+            } else {
+                System.out.println("¡Ha acertado!");
+            }
+        }while (!adivino);
+
+        */
+        AhorcadoServicio as = new AhorcadoServicio();
+        as.crearJuego();
+        while(as.getCantDisponible()!= 0 && !as.isCompleta()){
+            as.juego();
+        }
+        if(as.isCompleta()){
+            System.out.println("ADIVINASTE!: " + as.getAhorcado().getPalabra());
+        }
     }
 }
