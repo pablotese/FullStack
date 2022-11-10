@@ -1,10 +1,11 @@
 package Clase;
 
+import java.util.ArrayList;
 import java.util.Vector;
 
 public class Ahorcado {
 
-    private Vector <String> palabra = new Vector();
+    private ArrayList<String> palabra = new ArrayList<>();
     private int cantLetras;
     private int cantJugadasMax;
 
@@ -13,7 +14,7 @@ public class Ahorcado {
 
     public Ahorcado(String pal, int max) {
         for(int i=0; i < pal.length() ; i++){
-            this.palabra.addElement(pal.substring(i,i+1));
+            this.palabra.add(pal.substring(i,i+1));
         }
         this.cantLetras = pal.length();
         this.cantJugadasMax = max;
@@ -32,11 +33,11 @@ public class Ahorcado {
         return false;
     }
 
-    public Vector getPalabra() {
+    public ArrayList<String> getPalabra() {
         return palabra;
     }
 
-    public void setPalabra(Vector palabra) {
+    public void setPalabra(ArrayList<String> palabra) {
         this.palabra = palabra;
     }
 
