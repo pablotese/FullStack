@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/FullStack.iml" filepath="$PROJECT_DIR$/.idea/FullStack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Guia07POO/Guia07POO.iml" filepath="$PROJECT_DIR$/Guia07POO/Guia07POO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Guia08-Collections/Guia08-Collections.iml" filepath="$PROJECT_DIR$/Guia08-Collections/Guia08-Collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Guia08-Collections/Guia09-Relaciones/Guia09-Relaciones.iml" filepath="$PROJECT_DIR$/Guia08-Collections/Guia09-Relaciones/Guia09-Relaciones.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaIntro/JavaIntro.iml" filepath="$PROJECT_DIR$/JavaIntro/JavaIntro.iml" />
+    </modules>
+  </component>
+</project>

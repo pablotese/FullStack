@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         /*
-        PerroService ps = new PerroService();
+        clases.PerroService ps = new clases.PerroService();
         ps.crearPerros();
 
         AlumnoService as = new AlumnoService();
@@ -25,5 +25,8 @@ public class Main {
 
         ps.todasLasAcciones(pelis);
         */
+        PersonaService ps = new PersonaService();
+        ps.crearPersona(2); // genero 2 personas
+        ps.mostrarPersonas();
     }
 }
